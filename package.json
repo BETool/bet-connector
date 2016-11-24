@@ -1,0 +1,30 @@
+{
+  "name": "bet-connector",
+  "version": "0.0.1",
+  "description": "BETool connector module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BETool/bet-connector.git"
+  },
+  "author": "Mikhail Garbuzov <madmxg@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/BETool/bet-connector/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0"
+  },
+  "homepage": "https://github.com/BETool/bet-connector#readme"
+}
