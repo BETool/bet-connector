@@ -24,7 +24,8 @@
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
-    "babel-preset-es2015": "^6.16.0"
+    "babel-preset-es2015": "^6.16.0",
+    "bet-dealer-chrome": "0.0.1"
   },
   "homepage": "https://github.com/BETool/bet-connector#readme"
 }

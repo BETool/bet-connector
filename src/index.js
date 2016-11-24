@@ -1,17 +1,6 @@
 'use strict';
 
-class BetListenerChrome {
-  addListener () {
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-      this.sendAnswer(message, this.appId, sendResponse);
-      return true;
-    });
-  }
-
-  send (msg, cb) {
-    chrome.runtime.sendMessage(null, msg, null, cb);
-  }
-}
+import BetDealerChrome from 'bet-dealer-chrome';
 
 class BetConnector {
   constructor (browser) {
@@ -34,7 +23,7 @@ class BetConnector {
   }
 
   chrome () {
-    return new BetListenerChrome();
+    return new BetDealerChrome();
   }
 };
 
