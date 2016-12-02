@@ -19,7 +19,7 @@ class BetConnector {
         break;
     }
 
-    return this.chrome();
+    return this[browserType]();
   }
 
   chrome () {
