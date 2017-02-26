@@ -3,7 +3,7 @@
 import BetDealerChrome from 'bet-dealer-chrome';
 
 class BetConnector {
-  constructor (browser) {
+  constructor (browser, bg) {
     let browserType = '';
 
     switch (browser) {
@@ -19,11 +19,11 @@ class BetConnector {
         break;
     }
 
-    return this[browserType]();
+    return this[browserType](bg);
   }
 
-  chrome () {
-    return new BetDealerChrome();
+  chrome (bg) {
+    return new BetDealerChrome(bg);
   }
 };
 
