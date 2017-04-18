@@ -16,7 +16,6 @@ class BetConnector {
       case 'firefox':
       default:
         throw new Error('Not supported browser type');
-        break;
     }
 
     return this[browserType](bg);
@@ -25,6 +24,6 @@ class BetConnector {
   chrome (bg) {
     return new BetDealerChrome(bg);
   }
-};
+}
 
 export default BetConnector;
