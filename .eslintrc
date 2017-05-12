@@ -4,7 +4,6 @@
   "rules": {
     "space-before-function-paren": ["error", "always"],
     "no-param-reassign": ["error", { "props": false }],
-    "no-console": ["error", { allow: ["error"] }],
     "yoda": ["error", "always"],
     "class-methods-use-this": 0,
     "no-underscore-dangle": 0,
